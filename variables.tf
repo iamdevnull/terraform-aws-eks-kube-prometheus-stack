@@ -92,7 +92,7 @@ variable "k8s_service_account_create" {
 
 variable "k8s_irsa_role_name_prefix" {
   type        = string
-  default     = "prometheus-irsa"
+  default     = "kube-prometheus-stack-irsa"
   description = "The IRSA role name prefix for prometheus"
 }
 
