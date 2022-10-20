@@ -18,25 +18,25 @@ variable "cluster_identity_oidc_issuer_arn" {
 
 variable "helm_chart_name" {
   type        = string
-  default     = "kube-prometheus"
+  default     = "kube-prometheus-stack"
   description = "Helm chart name to be installed"
 }
 
 variable "helm_chart_version" {
   type        = string
-  default     = "6.1.13"
+  default     = "41.5.1"
   description = "Version of the Helm chart"
 }
 
 variable "helm_release_name" {
   type        = string
-  default     = "kube-prometheus"
+  default     = "kube-prometheus-stack"
   description = "Helm release name"
 }
 
 variable "helm_repo_url" {
   type        = string
-  default     = "https://charts.bitnami.com/bitnami"
+  default     = "https://prometheus-community.github.io/helm-charts"
   description = "Helm repository"
 }
 
