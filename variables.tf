@@ -74,7 +74,7 @@ variable "helm_atomic" {
 
 variable "k8s_namespace" {
   type        = string
-  default     = "prometheus"
+  default     = "kube-prometheus-stack"
   description = "The K8s namespace in which the ingress-nginx has been created"
 }
 
